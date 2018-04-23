@@ -1,0 +1,6 @@
+
+| Field | Title | Type | Format | Constraints | Description |
+|---|---|---|---|---|---|
+<%- schema.fields.each do |field| %>
+| <%= field[:name] %> | <%= field[:title] %> | <%= field[:type] %> | <%= field[:format] %> | <%= field[:constraint] %> | <%= field[:description] %> | 
+<%- end %>
